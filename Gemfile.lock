@@ -52,6 +52,10 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.3.5)
+    msgpack (0.5.8)
+    msgpack-rails (0.0.1)
+      msgpack
+      rails (>= 2.3.5)
     multi_json (1.10.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -116,6 +120,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  msgpack-rails
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

@@ -5,11 +5,24 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+=begin
+    respond_to do |format|
+      format.html
+      format.json { render json: @posts }
+      format.mpac { render text: @posts.to_msgpack, content_type: 'application/x-mpac' }
+    end
+=end
   end
 
   # GET /posts/1
   # GET /posts/1.json
+  # GET /posts/1.mpac
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @post }
+      format.mpac { render text: @post.to_msgpack, content_type: 'application/x-mpac' }
+    end
   end
 
   # GET /posts/new
