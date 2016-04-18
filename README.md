@@ -9,7 +9,7 @@ res = Net::HTTP.get(URI.parse('http://0.0.0.0:3000/posts/1.mpac/'))
 MessagePack.unpack(res)
 ```
 
-## Send MessagePack resuest example
+## Send MessagePack request example
 
 ```
 $ pry -r msgpack -r uri -r 'net/http' -r json
