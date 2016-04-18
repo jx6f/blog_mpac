@@ -38,4 +38,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'msgpack-rails'
+gem 'msgpack_rails'
+gem 'execjs'
+gem 'therubyracer'
+
