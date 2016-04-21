@@ -42,3 +42,5 @@ gem 'msgpack_rails'
 gem 'execjs'
 gem 'therubyracer'
 
+gem 'unicorn'
+gem 'foreman'
